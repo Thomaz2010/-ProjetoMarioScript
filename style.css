@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    }
+
+.game {
+    width: 100%;
+    height: 100vh;
+    border-bottom: 100px solid green;
+    margin: 0% auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB , #E0f6ff);
+
+} 
+
+.pipe-game {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 1.5s infinite linear;
+
+}
+
+.super-mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+
+
+}
+
+
+.jump-mario {
+    animation: mario-animation 500ms ease-out;
+
+}
+
+
+.cloud-game {
+    position: absolute;
+    width: 550px;
+    animation: cloud-animation 20s infinite linear;
+
+
+
+}   
+
+.game-over{
+    width: 50%;
+    position: absolute;
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 5px;
+} 
+
+.start{
+
+    font-family: fantasy;
+    font-size: 30px;
+    width: 25%;
+    height: 8%;
+    position: absolute;
+    justify-content: center;
+    margin-left: 38%;
+    margin-top: 5px;
+    opacity: 40%;
+    color:black;
+    background-color: ivory;
+    border-radius: 25%;
+    animation: start-animation 2s infinite;
+
+    
+
+}
+
+@keyframes start-animation {
+   0% {
+    background-color: rgb(40, 43, 233);
+   }
+
+   40%{
+   background-color: red;
+}
+50%{
+   background-color: rgb(174, 185, 21);
+}
+60%{
+    background-color: rgb(226, 214, 214);
+}
+
+70%{
+    background-color: rgb(100, 17, 148);
+}
+
+
+100%{
+    background-color: rgb(210, 207, 221);
+}
+}
+
+
+
+@keyframes pipe-animation {
+    from{
+        right: -80px;
+
+    }
+    to{
+        right: 100%;
+
+    }
+}
+
+
+@keyframes cloud-animation {
+    from{
+        right: -550px;
+
+    }
+
+    to{
+        right: 100%;
+
+    }
+    
+}
+
+@keyframes mario-animation {
+        0%{
+            bottom: 0%;
+        }
+        40%{
+            bottom: 180px;
+        }
+        50%{
+            bottom: 180px;
+        }
+        60%{
+            bottom: 180px;
+        }
+        70%{
+            bottom: 180px;
+        }
+       
+        100%{
+            bottom: 0%;
+        }
+
+
+}
