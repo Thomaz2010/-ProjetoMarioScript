@@ -32,6 +32,27 @@
 
 }
 
+.music{
+    background-color: green;
+    color: green;
+    margin-left: 0;
+    border-style: double;
+    margin-top: -33%;
+    margin-bottom: 1%;
+    opacity: 70%;
+    float:inline-end
+    
+    
+    ;
+    
+    
+   
+  
+
+
+    
+}
+
 
 .jump-mario {
     animation: mario-animation 500ms ease-out;

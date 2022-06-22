@@ -2,21 +2,28 @@ const mario = document.querySelector(".super-mario");
 const pipe = document.querySelector(".pipe-game");
 const game = document.querySelector(".game");
 const gameOver = document.querySelector(".game-over");
+const start = document.querySelector(".initial");
 let elemento = document.querySelector(".placar");
+const player = document.querySelector(".music");
 
 let contador = 1;
 
 
 
+
 function refreshPage(){
     window.location.reload();
-    alert("Deseja iniciar o jogo?")
+    var name = prompt("Digite seu nome");
+    alert(`${name} -  Vamos Começar? `);
+   
+   
 };
+
 
      
 
 const jump = () => {
-  elemento.innerHTML = contador++
+  elemento.innerHTML = contador++  
   mario.classList.add("jump-mario");
   setTimeout(() => {
     mario.classList.remove("jump-mario");
@@ -42,12 +49,13 @@ const loopGame = setInterval(() => {
     mario.attributes.hidden = false;
 
     gameOver.removeAttribute("hidden");
-    clearInterval(loopGame);
-    
+    player.removeAttribute("src");
+    player.src = player.src;
+    clearInterval(loopGame); 
      
   }
   
-}, 10);
+}, 10); 
 
 
 
