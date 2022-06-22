@@ -2,6 +2,10 @@ const mario = document.querySelector(".super-mario");
 const pipe = document.querySelector(".pipe-game");
 const game = document.querySelector(".game");
 const gameOver = document.querySelector(".game-over");
+let elemento = document.querySelector(".placar");
+
+let contador = 1;
+
 
 
 function refreshPage(){
@@ -9,8 +13,10 @@ function refreshPage(){
     alert("Deseja iniciar o jogo?")
 };
 
+     
 
 const jump = () => {
+  elemento.innerHTML = contador++
   mario.classList.add("jump-mario");
   setTimeout(() => {
     mario.classList.remove("jump-mario");
@@ -48,3 +54,4 @@ const loopGame = setInterval(() => {
 
 
 document.addEventListener("keydown", jump);
+

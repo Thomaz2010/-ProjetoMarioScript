@@ -76,6 +76,23 @@
 
 }
 
+.placar{
+    font-family: fantasy;
+    font-size: 15px;
+    width: 15%;
+    height: 5%;
+    position: absolute;
+    justify-content:center;
+    margin-left: 43%;
+    margin-top: 4%;
+    opacity: 45;
+    color: black;
+    background-color: rgba(154, 154, 241, 0.103);
+    border-radius: 25%;
+
+
+}
+
 @keyframes start-animation {
    0% {
     background-color: rgb(40, 43, 233);
